@@ -26,11 +26,11 @@ function Eye({
   scale: number;
 }) {
   const s = scale;
-  const EYE_W = Math.round(220 * s);
-  const EYE_H = Math.round(260 * s);
-  const IRIS_SIZE = Math.round(130 * s);
-  const PUPIL_SIZE = Math.round(70 * s);
-  const HIGHLIGHT_SIZE = Math.round(30 * s);
+  const EYE_W = Math.round(180 * s);
+  const EYE_H = Math.round(190 * s);
+  const IRIS_SIZE = Math.round(100 * s);
+  const PUPIL_SIZE = Math.round(55 * s);
+  const HIGHLIGHT_SIZE = Math.round(24 * s);
   const maxTravel = MAX_IRIS_TRAVEL * s;
 
   return (
@@ -77,8 +77,8 @@ function Eye({
         <div
           style={{
             position: "absolute",
-            top: Math.round(18 * s),
-            left: Math.round(18 * s),
+            top: Math.round(15 * s),
+            left: Math.round(15 * s),
             width: HIGHLIGHT_SIZE,
             height: HIGHLIGHT_SIZE,
             borderRadius: "50%",
@@ -89,10 +89,10 @@ function Eye({
         <div
           style={{
             position: "absolute",
-            top: Math.round(38 * s),
-            left: Math.round(42 * s),
-            width: Math.round(13 * s),
-            height: Math.round(13 * s),
+            top: Math.round(30 * s),
+            left: Math.round(34 * s),
+            width: Math.round(10 * s),
+            height: Math.round(10 * s),
             borderRadius: "50%",
             background: "rgba(255, 255, 255, 1)",
           }}
@@ -113,7 +113,7 @@ function Eyebrow({ flip = false, scale }: { flip?: boolean; scale: number }) {
         borderRadius: flip
           ? "50% 50% 30% 30% / 60% 60% 40% 40%"
           : "30% 30% 50% 50% / 40% 40% 60% 60%",
-        transform: flip ? "scaleX(-1) rotate(-8deg)" : "rotate(-8deg)",
+        transform: flip ? "scaleX(-1) rotate(-1deg)" : "rotate(-1deg)",
         boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
       }}
     />
