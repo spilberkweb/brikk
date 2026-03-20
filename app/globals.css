@@ -24,3 +24,30 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes pulse-glow {
+  0%, 100% { opacity: 1; box-shadow: 0 0 12px 2px rgba(251, 146, 60, 0.5); }
+  50%       { opacity: 0.7; box-shadow: 0 0 28px 6px rgba(251, 146, 60, 0.9); }
+}
+
+@keyframes shimmer {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(250%); }
+}
+
+@keyframes bar-breathe {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.35; }
+}
+
+.loading-bar-fill {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.loading-bar-shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
+
+.loading-bar-wrapper {
+  animation: bar-breathe 1.8s ease-in-out infinite;
+}
