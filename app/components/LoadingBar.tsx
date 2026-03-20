@@ -38,7 +38,7 @@ export default function LoadingBar() {
       {/* Track */}
       <div
         style={{
-          width: 320,
+          width: "min(320px, 85vw)",
           height: 8,
           borderRadius: 99,
           background: "rgba(255,255,255,0.15)",
