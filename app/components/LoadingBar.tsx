@@ -34,7 +34,15 @@ export default function LoadingBar() {
   }, []);
 
   return (
-    <div className="loading-bar-wrapper" style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12 }}>
+    <div
+      className="loading-bar-wrapper"
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        gap: 12,
+      }}
+    >
       {/* Track */}
       <div
         style={{
@@ -89,7 +97,7 @@ export default function LoadingBar() {
           textTransform: "uppercase",
         }}
       >
-        makám na tom...
+        makkám na tom...
       </p>
     </div>
   );
